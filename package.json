@@ -1,0 +1,23 @@
+{
+  "name": "foof-delivery-app",
+  "version": "1.0.0",
+  "description": "Food",
+  "main": "app.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arpitaggarwal0511/Foof-Delivery-app.git"
+  },
+  "author": "Arpit Aggarwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arpitaggarwal0511/Foof-Delivery-app/issues"
+  },
+  "homepage": "https://github.com/arpitaggarwal0511/Foof-Delivery-app#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
