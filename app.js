@@ -1820,7 +1820,7 @@ const Body = () => {
     <div className="body">
       <div className="search">search bar here !</div>
       <div className="res-cont">
-        {resList.map(rest)}
+        <Rescard resData={resList[0]}/>
       </div>
     </div>
   );
