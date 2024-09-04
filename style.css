@@ -4,6 +4,7 @@
     justify-content: space-between;
     border: 2px solid;
     border-radius: 10px;
+    background-color: #CEDF9F;
 }
 .logo{
     height: 90;
@@ -22,6 +23,8 @@
 
 }
 .body{
+    background-color: #CEDF9F;
+
     margin: 20px;
     border: 2px solid;
     border-radius: 5px;
@@ -29,20 +32,28 @@
 .search{
     margin: 20px;
 }
-.res-cont{
+.res-cont{ 
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
 }
 .res-card{
+    background-color: #F1F3C2;
     border: 2px solid;
-    border-radius: 5px;
+    border-radius: 5px; 
     padding: 10px;
-    width:200px;
-    height: 300px;
+    width:230px;
     text-align: center;
     margin: 5px;
+    transition: all .2s ease-in-out;
+}
+.res-card:hover{
+        transform: scale(1.1);
+        cursor: pointer;
 }
 .k1{
     width: 170px;
+}
+body{
+        background-color: #A1D6B2;
 }

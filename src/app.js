@@ -28,7 +28,7 @@ const Rescard= (props) => {
     <div className="res-card">
       <img
         className="k1"
-        src={cloudinaryImageId}
+        src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+cloudinaryImageId}
       />
       <h3>{name}</h3>
       <h4>{cuisines.join(", ")}</h4>
@@ -1820,7 +1820,11 @@ const Body = () => {
     <div className="body">
       <div className="search">search bar here !</div>
       <div className="res-cont">
-        <Rescard resData={resList[0]}/>
+    {
+        resList.map((rest)=>(
+            <Rescard key={rest.info.id } resData={rest}/>
+        ))
+    }
       </div>
     </div>
   );
