@@ -57,3 +57,10 @@
 body{
         background-color: #A1D6B2;
 }
+.filter{
+    margin: 20px;
+    padding: 05px;
+}
+.filter-btn {
+    cursor: pointer;
+}
