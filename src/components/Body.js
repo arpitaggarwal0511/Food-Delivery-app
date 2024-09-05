@@ -1,9 +1,10 @@
 import Rescard from "./Rescard";
 import resList from "../utils/mockData";
-import {useState} from "react";
+import { useState } from "react";
 
 const Body = () => {
-  const [ulist,setulist ]=useState(resList);
+  const [ulist, setUlist] = useState(resList);
+
   return (
     <div className="body">
       <div className="filter">
@@ -11,15 +12,15 @@ const Body = () => {
           className="filter-btn"
           onClick={() => {
             const flist = ulist.filter((res) => res.info.avgRating > 4.5);
-            setulist(flist);
-          }}  
+            setUlist(flist);
+          }}
         >
-          Top Rated Restaurants !
+          Top Rated Restaurants!
         </button>
       </div>
 
       <div className="res-cont">
-        {resList.map((rest) => (
+        {ulist.map((rest) => (
           <Rescard key={rest.info.id} resData={rest} />
         ))}
       </div>
