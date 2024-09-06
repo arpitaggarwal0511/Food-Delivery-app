@@ -4,7 +4,7 @@
   "description": "Food",
   "main": "app.js",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel ./public/index.html",
     "test": "jest"
   },
   "repository": {
