@@ -60,6 +60,7 @@ body{
 .filter{
     margin: 20px;
     padding: 05px;
+    display: flex;
 }
 .filter-btn {
     cursor: pointer;
@@ -79,4 +80,10 @@ body{
     width:230px;
     text-align: center;
     margin: 5px;
+}
+.login{
+    text-align: center;
+    height: 30px;
+    padding-bottom: 40px;
+    cursor: pointer;
 }
