@@ -18,7 +18,7 @@ setListOfRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithSty
   }
   if(listOfRestaurants.length==0)
   {
-    return Shimmer; 
+    return <Shimmer/>; 
   }
   return (
     <div className="body">
