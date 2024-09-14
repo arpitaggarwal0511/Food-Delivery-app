@@ -2,13 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Body from "./components/Body";
 import Header from "./components/Header";
-import Rescard from "./components/Rescard";
-import Shimmer from "./components/Shimmer";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import { createBrowserRouter,RouterProvider,Outlet } from "react-router-dom";
 import Contact from "./components/Contact";
+import Restmenu from "./components/Restmenu";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -37,7 +36,12 @@ const appRouter = createBrowserRouter([
       {
         path:"/contact",
         element:<Contact/>
+      },
+      {
+        path:"/restaurant/:resId",
+        element:<Restmenu/>
       }
+      
     ],
     errorElement:<Error/>
   }
