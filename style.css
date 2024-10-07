@@ -87,3 +87,10 @@ body{
     padding-bottom: 40px;
     cursor: pointer;
 }
+.user-card{
+    border: 1px solid;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 20px;
+    background-color: #CEDF9F;
+}
